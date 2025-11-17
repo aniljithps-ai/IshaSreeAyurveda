@@ -1,0 +1,48 @@
+<section class="treatments-hero"></section>
+
+<section class="treatments-intro">
+  <div class="container">
+    <div class="intro-text">
+      <p>Rejuvenation treatment is a broad term for cosmetic procedures that aim to improve the appearance of skin by treating signs of aging and damage, such as wrinkles, scars, and sunspots. These treatments work by stimulating the growth of new, healthy skin and boosting collagen production, and they can range from non-invasive methods like laser therapy and chemical peels to more invasive surgical options.</p>
+    </div>
+  </div>
+</section>
+
+<section class="treatments-page">
+  <div class="container">
+    <h2 class="page-title">Rejuvenation Treatments</h2>
+
+    <div class="carousel-wrap">
+      <button class="nav left" type="button" aria-label="Previous" (click)="prevPage()">‹</button>
+      <div class="slides" #slides>
+        <div class="slides-track" #slidesTrack>
+          <div class="t-slide" *ngFor="let it of items; let i = index" (click)="selectItem(i)">
+            <div class="img-wrap">
+              <img [src]="it.img" [alt]="it.title">
+              <div class="overlay" [class.open]="activeIndex === i">
+                <div class="overlay-inner">
+                  <h3>{{ it.title }}</h3>
+                  <p>{{ it.desc }}</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-caption">{{ it.title }}</div>
+          </div>
+        </div>
+      </div>
+      <button class="nav right" type="button" aria-label="Next" (click)="nextPage()">›</button>
+
+      <div class="dots" aria-hidden="false">
+        <button *ngFor="let p of pages; let idx = index" type="button" class="dot" [class.active]="currentPage === idx" (click)="goToPage(idx)" [attr.aria-label]="'Go to page ' + (idx+1)"></button>
+      </div>
+    </div>
+
+    <!-- Details block: shows details for the selected treatment -->
+    <div class="treatment-details" *ngIf="selected !== null">
+      <div class="container">
+        <h3 class="details-title">{{ selected.title }}</h3>
+        <p class="details-desc">{{ selected.desc }}</p>
+      </div>
+    </div>
+  </div>
+</section>

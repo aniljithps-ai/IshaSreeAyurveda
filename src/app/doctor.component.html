@@ -1,0 +1,42 @@
+<!-- Full-width header image for the doctor page -->
+<section class="doc-hero" role="img" aria-label="Doctor header image"></section>
+
+<section class="doc-header">
+  <div class="container header-grid">
+    <div class="photo-wrap">
+      <div class="avatar"><img [src]="doctor.photo" alt="Doctor"/></div>
+    </div>
+
+    <div class="doc-info">
+      <h1 class="name">{{ doctor.name }}</h1>
+      <p class="qual">{{ doctor.qual }}</p>
+      <p class="reg">Reg No: {{ doctor.reg }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="bio">
+  <div class="container">
+  <h2>Biography</h2>
+  <p>{{ doctor.bio }}</p>
+  </div>
+</section>
+
+<section class="timings">
+  <div class="container timings-grid">
+    <div class="timings-card">
+      <h3>Available Timings</h3>
+      <ul>
+        <li *ngFor="let t of timings; let i = index">
+          <button class="day-btn" (click)="toggleDay(i)">
+            <span class="day">{{ t.day }}</span>
+            <span class="chev">▶</span>
+          </button>
+          <div class="day-times" [class.open]="activeDay === i">{{ t.times }}</div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="empty-space"></div>
+  </div>
+</section>

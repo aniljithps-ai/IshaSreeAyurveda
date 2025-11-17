@@ -1,0 +1,91 @@
+.about-hero{ position:relative; width:100vw; left:50%; right:50%; margin-left:-50vw; margin-right:-50vw; height:240px; background-image:url('/slide6.jpg'); background-size:cover; background-position:center; filter:brightness(0.86) }
+/* Rejuvenation section */
+.about{ padding:16px 0; background:var(--light-pink, #ffffff) }
+.about-grid{ display:grid; grid-template-columns: 1fr 460px; gap:36px; align-items:center }
+.about-media img{ width:100%; height:360px; object-fit:cover; display:block; border-radius:4px }
+.about-text h2{ font-size:32px; margin-top:0; color:#7b3fe0;padding-left: 20px; }
+.about-text .lead{ color:#666; line-height:1.8;padding-left: 20px; }
+.about-btn{ display:inline-block; margin-top:20px; background:linear-gradient(90deg,#ff6b98,#a368ff); color:white; padding:12px 20px; border-radius:8px; text-decoration:none; font-weight:600 }
+@media (max-width:900px){
+  .about-grid{ grid-template-columns: 1fr }
+  .about-media img{ height:240px }
+}
+
+.vision-mission-container {
+  background-color: #ffffff; /* Soft pink background */
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  color: #7b3fe0; /* Deep purple text */
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-text {
+  color: #06010a;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.section-text li {
+  margin-bottom: 0.5rem;
+}
+
+.packages-section {
+  background-color: #ffe6f0; /* Pink background */
+  padding: 2rem;
+  text-align: center;
+}
+
+.section-title {
+  color: #7b3fe0; /* Purple text */
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.package-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.package-card {
+  background-color: #fff;
+  border: .5px solid #7b3fe0;
+  border-radius: 12px;
+  padding: 1rem;
+  width: 250px;  
+  transition: transform 0.2s ease;
+}
+
+
+
+.package-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.package-card h3 {
+  color: #7b3fe0;
+  margin: 1rem 0;
+}
+
+.package-card button {
+  background-color: transparent;
+  border: 1px solid #7b3fe0;
+  color: #7b3fe0;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.package-card button:hover {
+  transform: scale(1.05);
+}
+

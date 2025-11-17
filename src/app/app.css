@@ -1,0 +1,92 @@
+:host {
+	--purple: #7b2cbf;
+	--magenta: #ff69b4;
+	--light-pink: #ffeef8;
+	--dark: #222;
+	--muted: #666;
+	display: block;
+}
+
+/* Header */
+.site-header .topbar {
+	background: linear-gradient(90deg, rgba(123,44,191,0.08), rgba(255,105,180,0.06));
+	border-bottom: 1px solid rgba(0,0,0,0.03);
+	font-size: 0.9rem;
+}
+.site-header .topbar-inner{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 6px 16px;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.site-header .contact{ color:var(--muted); display:flex; gap:12px }
+.site-header .top-actions .social{ color:var(--purple); margin-left:8px; text-decoration:none }
+
+.site-header .navbar{ background: white; box-shadow: 0 1px 0 rgba(0,0,0,0.03)}
+.site-header .nav-inner{ max-width:1200px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; padding:18px}
+.logo{ display:flex; align-items:center; gap:12px }
+.logo img{ width:56px; height:56px; border-radius:6px }
+.brand .name{ font-weight:700; color:var(--purple); letter-spacing:2px }
+.brand .tag{ font-size:0.85rem; color:var(--muted) }
+
+.main-nav ul{ list-style:none; display:flex; gap:22px; margin:0; padding:0 }
+.main-nav a{ color:var(--dark); text-decoration:none; font-weight:500 }
+.main-nav .active a{ color:var(--magenta) }
+
+.cta .btn{ padding:9px 14px; border-radius:6px; text-decoration:none; font-weight:700 }
+.btn-ghost{ background:linear-gradient(90deg,var(--magenta),var(--purple)); color:white }
+
+@media (max-width: 800px){
+	.main-nav ul{ display:none }
+}
+
+/* Footer styles */
+.site-footer{ background:var(--light-pink); color:var(--dark); margin-top:34px }
+.footer-inner{ max-width:1200px; margin:0 auto; display:grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap:36px; padding:64px 20px }
+.site-footer .footer-logo{ width:96px; height:auto; display:block; margin-bottom:18px }
+.site-footer h4{ margin:0 0 12px; font-size:1.05rem }
+.site-footer p{ color:var(--muted); line-height:1.8 }
+.site-footer .col ul{ list-style:none; padding:0; margin:0 }
+.site-footer .col ul li{ padding:10px 0; color:var(--dark) }
+.site-footer .social-icons a{ margin-right:10px; color:var(--magenta); text-decoration:none }
+
+.copyright-bar{ background:linear-gradient(90deg,var(--magenta),var(--purple)); color:white }
+.copyright-inner{ max-width:1200px; margin:0 auto; padding:18px 20px; text-align:center }
+
+.whatsapp-cta{ position:fixed; right:24px; bottom:22px; background:#19c88b; color:white; padding:12px 20px; border-radius:28px; box-shadow:0 6px 18px rgba(0,0,0,0.12); text-decoration:none; font-weight:600 }
+
+@media (max-width: 900px){
+	/* hide desktop menu and show hamburger */
+	.hamburger{ display:block }
+	.main-nav{ position:fixed; inset:64px 0 0 0; background:white; transform:translateY(-10px); transition:transform 220ms ease; opacity:0; pointer-events:none }
+	.main-nav.open{ transform:translateY(0); opacity:1; pointer-events:auto }
+	.main-nav ul{ display:flex; flex-direction:column; gap:8px; padding:16px }
+}
+
+/* Hamburger button */
+.hamburger{ display:none; background:transparent; border:0; font-size:22px; cursor:pointer }
+
+/* make footer and other sections stack on small screens */
+@media (max-width: 900px){
+  .footer-inner{ grid-template-columns: 1fr; padding:28px 20px }
+}
+.social-icons {
+  display: flex;
+  gap: .3rem;
+  background-color: #ffe6f0; /* Light pink background */
+  padding: .3rem;
+  border-radius: 8px;
+}
+
+.social-icons a {
+  color: #6a0dad; /* Purple icon color */
+  font-size: .8rem;
+  transition: transform 0.2s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #ff1493; /* Deep pink on hover */
+}

@@ -1,0 +1,291 @@
+<section class="home-hero">
+  <div class="carousel">
+    <button class="nav left" (click)="scrollLeft()">‹</button>
+    <div #slides class="slides" role="region" aria-label="Featured treatments carousel">
+      <div class="slide" style="background-image:url('/slide1.png')"></div>
+      <div class="slide" style="background-image:url('/slide2.png')"></div>
+      <div class="slide" style="background-image:url('/slide3.png')"></div>
+    </div>
+    <button class="nav right" (click)="scrollRight()">›</button>
+
+    <div class="caption">
+      <h1>IshaSree Ayurveda</h1>
+      <p>Achieve balance and wellness of body, mind, and emotions through Ayurveda with the help of diet, classical herbal medicines, yoga, and lifestyle changes.</p>
+      <a class="btn primary" href="#" [routerLink]="'/contact'">BOOK NOW</a>
+    </div>
+  </div>
+</section>
+
+<!-- Trust Numbers / Stats -->
+<section class="trust-numbers">
+  <div class="container stats-grid">
+    <div class="stat">
+      <div class="num">1000+</div>
+      <div class="label">Happy Patients</div>
+    </div>
+
+    <div class="stat">
+      <div class="num">2+</div>
+      <div class="label">Years of Service</div>
+    </div>
+
+    <div class="stat">
+      <div class="num">98%</div>
+      <div class="label">Positive Reviews</div>
+    </div>
+  </div>
+</section>
+
+<!-- Features section -->
+<section class="features">
+  <div class="container features-grid">
+    <div class="feature">
+      <div class="icon"><img src="/leaf-icon.png" alt="leaf"/></div>
+      <h3>Call for Appointment</h3>
+      <p>Consult Skilled Ayurveda Doctors for Specialized Ayurveda Treatment in Kakkanad</p>
+    </div>
+
+    <div class="feature">
+      <div class="icon"><img src="/leaf-icon.png" alt="leaf"/></div>
+      <h3>Super-Fast Ayurveda Care</h3>
+      <p>Quick, symptomatic relief for common health issues</p>
+    </div>
+
+    <div class="feature">
+      <div class="icon"><img src="/leaf-icon.png" alt="leaf"/></div>
+      <h3>Root-Cause Disease Reversal</h3>
+      <p>Sustained relief from a serious chronic disease</p>
+    </div>
+  </div>
+</section>
+
+<!-- Ayurvedic Treatments gallery -->
+<section class="treatments">
+  <div class="container">
+    <h2>Ayurvedic Treatments</h2>
+    <p class="lead">Improper food, activities, sleep and lifestyle can lead to mild vitiation of dosas in the body. At this point, mild treatments and herbal preparations along with lifestyle modification helps in correcting the imbalances of the body. Ayurveda considers diet, lifestyle and sleep as the pillars of preventive healthcare. Ayurveda strives to treat cause of the disease by interfere with the pathology and improves the vitality.</p>
+
+    <div class="t-grid">
+      <div class="t-item">
+        <img src="/abhyanga.jpg" alt="Abhyanga">
+        <div class="t-overlay">
+          <div class="overlay-inner">
+            <h3>Abhyanga</h3>
+            <p>Abhyangam is the traditional Ayurvedic full body treatment performed using medicated herbal oils in long flowing strokes. It helps in lymphatic drainage, reduces fatigue, prevents aging while mitigating the aggravated vata dosa.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="t-item">
+        <img src="/shirodhara.jpg" alt="treatment 2">
+        <div class="t-overlay">
+          <div class="overlay-inner">
+            <h3>Shirodhara</h3>
+            <p>Shirodhara is an ayurvedic healing technique of slow rhythmic dipping of medicated herbal oil on the forehead. It is effective in : Insomnia, Enhances cognitive abilities, Relieves stress, calms the mind and body.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="t-item">
+        <img src="/pizhichil.jpg" alt="treatment 3">
+        <div class="t-overlay">
+          <div class="overlay-inner">
+            <h3>Pizhichil</h3>
+            <p>Pizhichil is a traditional ayurveda treatment practiced in Kerala, in which linen dipped in warm ayurveda oil is squeezed over the body with long strokes. Beneficial in relievingmuscle spasm, Calming body and mind. It is used in the treatment of arthritis, muscular atrophy and degenerative nerve disorders.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="t-item">
+        <img src="/podikizhi.jpg" alt="treatment 4">
+        <div class="t-overlay">
+          <div class="overlay-inner">
+            <h3>Podi Kizhi</h3>
+            <p>Podi kizhi is a linen poultice prepared out of carefully curated herbal powders. The poultice is applied on the body as dry heat or after dipping in warm medicated oil. This fomentation treatment is effective in : Reducing degeneration, Muscle spasm, Low back ache, Arthritis & Joint pains and alleviates swelling.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="t-item">
+        <img src="/udvarthanam.jpg" alt="treatment 5">
+        <div class="t-overlay">
+          <div class="overlay-inner">
+            <h3>Udwarthanam</h3>
+            <p>Udwarthanam is an Ayurveda full body treatment using dry herbal powders. In this therapy, herbal powder is scrubbed on the body, in the direction opposite to that of body hairs. This opens the fine pores in the body and cleanse them while improving circulation and lymphatic drainage. This is effective in reducing cellulite, kapha and fat from the body.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="t-item">
+        <img src="/mukhalepam.jpg" alt="treatment 6">
+        <div class="t-overlay">
+          <div class="overlay-inner">
+            <h3>Mukha lepam</h3>
+            <p>Mukha lepam is a comprehensive treatment with stimulation of marma points on face, hands and feet. This treatment includes  gentle cleansing of face, neck and shoulder followed by nourishing therapy with Njavara rice and traditionally used herbal powders.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="t-cta"><a class="btn primary" [routerLink]="'/treatments'" href="#">ALL AYURVEDIC TREATMENTS &rarr;</a></div>
+  </div>
+</section>
+
+<!-- Highlight Feature: Karkidaka Chikitsa -->
+<section class="feature-highlight">
+  <div class="container highlight-grid">
+    <div class="highlight-media">
+      <img src="/karkidaka.jpg" alt="Karkidaka" />
+    </div>
+
+    <div class="highlight-text">
+      <h2>Revitalize Your Body &amp; Mind with Karkidaka Chikitsa at IshaSree Ayurveda</h2>
+      <p class="subtitle">Traditional Healing for the Monsoon Season | Kerala’s Authentic Ayurvedic Detox</p>
+
+      <p class="lead">Karkidaka Chikitsa – the ancient monsoon rejuvenation therapy – is an essential Ayurvedic wellness ritual practiced during the Malayalam month of Karkidakam (July–August). At IshaSree Ayurveda, we bring you personalized Karkidaka therapy, rooted in Kerala’s age-old healing traditions.</p>
+      <a class="btn svc-cta" [routerLink]="'/karkidaka'" href="#">Learn More</a>
+    </div>
+  </div>
+</section>
+
+  <!-- Our Doctors section -->
+  <section class="doctors">
+    <div class="container">
+      <h2 class="section-title">Our Doctors</h2>
+      <div class="decor"><img src="/leaf-icon.png" alt=""/></div>
+
+      <div class="doc-grid">
+        <a class="doc-card" [routerLink]="['/doctor','aishwarya']">
+          <div class="doc-photo"><img src="/doc1.jpeg" alt="Dr Aishwarya"/></div>
+          <h3 class="doc-name">Dr.Aishwarya Nair</h3>
+          <p class="doc-qual">BAMS, MD (Ayu)</p>
+          <p class="doc-role">Chief Physician</p>
+        </a>
+
+        <a class="doc-card" [routerLink]="['/doctor','sreeranjini']">
+          <div class="doc-photo"><img src="/doc2.jpg" alt="Dr Sreeranjini"/></div>
+          <h3 class="doc-name">Dr.Sreeranjini MK</h3>
+          <p class="doc-qual">BAMS, PGDMH</p>
+          <p class="doc-role">Chief Physician</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+<!-- Our Services -->
+<section class="services">
+  <div class="container">
+    <h2 class="section-title">Our Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="svc-media"><img src="/panchakarma.png" alt="Panchakarma"/></div>
+        <h3>Panchakarma Therapy</h3>
+        <p class="desc">A detoxifying treatment to cleanse the body and restore balance.</p>
+        <!--<a class="btn svc-cta" href="#">Learn More</a>-->
+      </div>
+
+      <div class="service-card">
+        <div class="svc-media"><img src="/op-consultation.png" alt="OP Consultation"/></div>
+        <h3>OP Consultation</h3>
+        <p class="desc">Comprehensive assessment and personalized treatment plans.</p>
+        
+      </div>
+
+      <div class="service-card">
+        <div class="svc-media"><img src="/cosmetology.png" alt="Cosmetology"/></div>
+        <h3>Cosmetology</h3>
+        <p class="desc">Specialized face and skin therapies for natural rejuvenation.</p>
+        
+      </div>
+    </div>
+
+    <div class="services-grid services-grid-2">
+      <div class="service-card wide">
+        <div class="svc-media"><img src="/postnatal-care.png" alt="Prenatal & Postnatal care"/></div>
+        <h3>Prenatal &amp; Postnatal care</h3>
+        <p class="desc">Supportive therapies for mothers before and after delivery to restore vitality.</p>
+        
+      </div>
+
+      <div class="service-card wide">
+        <div class="svc-media"><img src="/ayurvedic-psychotherapy.png" alt="Ayurvedic Psychotherapy"/></div>
+        <h3>Ayurvedic Psychotherapy</h3>
+        <p class="desc">Achieve mental clarity and emotional balance with ayurvedic psychotherapy.</p>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq">
+  <div class="container faq-grid">
+    <div class="faq-list">
+      <h2 class="faq-title">Frequently Asked Questions</h2>
+
+      <div class="faq-item" *ngFor="let item of faqs; let i = index">
+        <button class="faq-toggle" (click)="toggleFaq(i)" [attr.aria-expanded]="activeFaq === i">
+          <span class="plus">+</span>
+          <span class="q-text">{{ item.q }}</span>
+        </button>
+
+        <div class="faq-body" [class.open]="activeFaq === i">
+          <p>{{ item.a }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-media">
+      <img src="/faq.png" alt="FAQ" />
+    </div>
+  </div>
+</section>
+
+<!-- Why IshaSree section -->
+
+<section class="why-ishasree">
+  <div class="container why-grid">
+    <div class="why-media">
+      <img src="/whyishasree.jpg" alt="Why Nerium"/>
+    </div>
+
+    <div class="why-list">
+      <h2>Why IshaSree Ayurveda ?</h2>
+      <ul>
+        <li><span class="icon"><img src="/leaf-icon.png" alt="leaf"/></span>Ayurvedic treatments</li>
+        <li><span class="icon"><img src="/leaf-icon.png" alt="leaf"/></span>Personalised care</li>
+        <li><span class="icon"><img src="/leaf-icon.png" alt="leaf"/></span>Holistic approach</li>
+        <li><span class="icon"><img src="/leaf-icon.png" alt="leaf"/></span>Lifestyle management</li>
+        <li><span class="icon"><img src="/leaf-icon.png" alt="leaf"/></span>Herbal Medicines</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Rejuvenation Treatments section -->
+<section class="rejuvenation">
+  <div class="container rej-grid">
+    <div class="rej-text">
+      <h2>Rejuvenation Treatments</h2>
+      <p class="lead">IshaSree Ayurveda offers specific recommendations to each individual on lifestyle, diet, exercise and yoga, herbal therapy, and even spiritual practice to restore and maintain balance in body and mind. Visit us and get the best Ayurvedic Treatment in Kochi with no side effects.</p>
+
+      <a class="btn rej-btn" [routerLink]="'/rejuvination'" >Read More</a>
+    </div>
+
+    <div class="rej-media">
+      <img src="/rejuv.jpg" alt="Rejuvenation treatment" />
+    </div>
+  </div>
+</section>
+
+<!-- Full-width CTA highlight -->
+<section class="cta-highlight">
+  <div class="cta-bg" role="img" aria-label="clinic highlight background"></div>
+  <div class="cta-overlay">
+    <div class="container">
+      <h2>IshaSree Ayurveda - The Best Ayurveda Clinic In Thrikkakkara, Kochi</h2>
+      <p class="lead">IshaSree Ayurveda, the leading Ayurveda Clinic in Kochi, offers unparalleled healthcare services. With a team of experienced doctors and therapists, state-of-the-art facilities, and a focus on holistic wellness, it stands as the epitome of excellence in Ayurvedic treatment in Thrikkakkara, Kochi.</p>
+      <div class="cta-row"><a class="btn primary large" href="#" [routerLink]="'/contact'">BOOK NOW</a></div>
+    </div>
+  </div>
+</section>

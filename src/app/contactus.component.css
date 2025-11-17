@@ -1,0 +1,117 @@
+.contactus-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+  background:var(--light-pink, #ffffff);
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  padding: 2.5rem 2rem;
+}
+.contactus-form {
+  flex: 2;
+}
+.contactus-form h2 {
+  color: #7b3fe0;
+  margin-bottom: 1.5rem;
+}
+.form-group {
+  margin-bottom: 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+.form-group label {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+.form-group input,
+.form-group textarea {
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  background: #f7f9fa;
+  transition: border 0.2s;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+  border: 1.5px solid #ffd700;
+  outline: none;
+}
+.submit-btn {
+  background: #2d3e50;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 0.5rem;
+}
+.submit-btn:hover {
+  background: #7b3fe0;
+  color: #2d3e50;
+}
+.contactus-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-left: 2rem;
+  border-left: 1.5px solid #eee;
+}
+.contactus-info h3 {
+  margin: 0.7rem 0 0.2rem 0;
+  color: #2d3e50;
+  font-size: 1.1rem;
+}
+.contactus-info p {
+  margin: 0 0 0.7rem 0;
+  color: #555;
+  font-size: 1rem;
+}
+.contactus-social {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+}
+.contactus-social a img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border-radius: 50%;
+  background: #f7f9fa;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.10);
+}
+.contactus-social a:hover img {
+  transform: scale(1.15);
+  box-shadow: 0 4px 16px #7b3fe0;
+}
+@media (max-width: 900px) {
+  .contactus-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem 0.5rem;
+  }
+  .contactus-info {
+    padding-left: 0;
+    border-left: none;
+    margin-top: 1.5rem;
+  }
+}
+.map-container {
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.map-container h2 {
+  color: #7b3fe0;
+  margin-bottom: 1.5rem;
+}

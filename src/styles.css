@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+html,body{
+	height:100%;
+	margin:0;
+	font-family: Inter, Roboto, 'Segoe UI', Arial, sans-serif;
+	background: #fff;
+	color: #222;
+}
+
+app-root, body > app-root { display:block; min-height:100%; }
+
+.page-body{ max-width:1200px; margin:28px auto; padding:0 16px }
+
+/* Utility button */
+.btn{ display:inline-block }
+

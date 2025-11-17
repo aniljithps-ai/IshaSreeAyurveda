@@ -1,0 +1,52 @@
+<section class="treatments-hero"></section>
+
+<section class="treatments-intro">
+  <div class="container">
+    <div class="intro-text">
+      <p>Improper food, activities, sleep and lifestyle can lead to mild vitiation of dosas in the body. At this point, mild treatments and herbal preparations along with lifestyle modification helps in correcting the imbalances of the body. Ayurveda considers diet, lifestyle and sleep as the pillars of preventive healthcare.</p>
+
+      <p>If the vitiation in the dosas have been persisting for a long time, the pathology of the disease would be advanced affecting the deeper dhatus of the body. This will be accompanied with poor agni and accumulation of toxins in the dhatus. In such conditions treatment protocol would be to improve agni with herbal preparations, followed by preparing the body for cleansing procedure using Purva karmas. When the features of proper oleation is achieved, the body is cleansed using the apt Pancha karma therapy. After this the localised dosas are corrected mitigate the disease.</p>
+
+      <p>Ayurveda strives to treat cause of the disease by interfere with the pathology and improves the vitality.</p>
+    </div>
+  </div>
+</section>
+
+<section class="treatments-page">
+  <div class="container">
+    <h2 class="page-title">All Ayurvedic Treatments</h2>
+
+    <div class="carousel-wrap">
+      <button class="nav left" type="button" aria-label="Previous" (click)="prevPage()">‹</button>
+      <div class="slides" #slides>
+        <div class="slides-track" #slidesTrack>
+          <div class="t-slide" *ngFor="let it of items; let i = index" (click)="selectItem(i)">
+            <div class="img-wrap">
+              <img [src]="it.img" [alt]="it.title">
+              <div class="overlay" [class.open]="activeIndex === i">
+                <div class="overlay-inner">
+                  <h3>{{ it.title }}</h3>
+                  <p>{{ it.desc }}</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-caption">{{ it.title }}</div>
+          </div>
+        </div>
+      </div>
+      <button class="nav right" type="button" aria-label="Next" (click)="nextPage()">›</button>
+
+      <div class="dots" aria-hidden="false">
+        <button *ngFor="let p of pages; let idx = index" type="button" class="dot" [class.active]="currentPage === idx" (click)="goToPage(idx)" [attr.aria-label]="'Go to page ' + (idx+1)"></button>
+      </div>
+    </div>
+
+    <!-- Details block: shows details for the selected treatment -->
+    <div class="treatment-details" *ngIf="selected !== null">
+      <div class="container">
+        <h3 class="details-title">{{ selected.title }}</h3>
+        <p class="details-desc">{{ selected.desc }}</p>
+      </div>
+    </div>
+  </div>
+</section>

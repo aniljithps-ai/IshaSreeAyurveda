@@ -1,0 +1,71 @@
+.package-hero{ position:relative; width:100vw; left:50%; right:50%; margin-left:-50vw; margin-right:-50vw; height:240px; background-image:url('/slide1.png'); background-size:cover; background-position:center; filter:brightness(0.86) }
+.package{ padding:16px 0; background:var(--light-pink, #ffffff) }
+.package-grid{ display:grid; grid-template-columns: 1fr 460px; gap:36px; align-items:center }
+.package-media img{ width:100%; height:360px; object-fit:cover; display:block; border-radius:4px }
+.package-text h2{ font-size:32px; margin-top:0; color:#7b3fe0;padding-left: 20px; }
+.package-text .lead{ color:#666; line-height:1.8;padding-left: 20px; }
+.package-btn{ display:inline-block; margin-top:20px; background:linear-gradient(90deg,#ff6b98,#a368ff); color:white; padding:12px 20px; border-radius:8px; text-decoration:none; font-weight:600 }
+@media (max-width:900px){
+  .package-grid{ grid-template-columns: 1fr }
+  .package-media img{ height:240px }
+}
+
+.packages-section { background-color: #ffe6f0; padding: 2rem; text-align: center; }
+.package-cards { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; }
+.package-card { background-color: #fff; border: .5px solid #7b3fe0; border-radius: 12px; padding: 1rem; width: 250px; transition: transform 0.2s ease; }
+.package-card h3 { color: #7b3fe0; margin: 1rem 0; }
+.package-card button { background-color: transparent; border: 1px solid #7b3fe0; color: #7b3fe0; padding: 0.5rem 1rem; border-radius: 6px; font-weight: bold; cursor: pointer; }
+.package-card button:hover { transform: scale(1.05); }
+
+/* Packages table styles */
+.packages-hero{ position:relative; width:100vw; left:50%; right:50%; margin-left:-50vw; margin-right:-50vw; height:240px; background-image:url('/slide6.jpg'); background-size:cover; background-position:center; filter:brightness(0.86); display:flex; align-items:center }
+.packages-hero-inner{ max-width:1100px; margin:0 auto; text-align:center; color: #fff }
+.panel-title{ display:inline-block; border-radius:20px; padding:6px 14px; border:1px dashed #b86a5a; background:#fff; color:#b86a5a; font-weight:700 }
+.doctors{ display:flex; justify-content:space-between; gap:16px; margin-top:12px }
+.doctor{ flex:1; text-align:center }
+.doctor-name{ font-weight:800; color:#7b3fe0 }
+.doctor-qual{ color:#a65c4a }
+
+.packages-table-wrap{ max-width:1100px; margin:28px auto; padding:18px }
+.packages-table{ display:grid; grid-template-columns: 1fr 3fr 1fr 0.6fr; gap:12px; background:#fff1f6; border:2px solid #e9cfcf; border-radius:14px; padding:16px }
+.packages-table .header{ font-weight:800; background:linear-gradient(180deg,#fff8f9,#ffeef3); padding:12px; border-radius:8px }
+.packages-table .col{ padding:12px; border-bottom:1px dashed rgba(0,0,0,0.06); }
+.packages-table .col-packages{ color:#b65b4f; font-weight:700 }
+.packages-table .col-includes{ color:#4a3b3b; font-size:0.95rem; line-height:1.4 }
+.packages-table .col-names{ color:#7b3fe0; font-weight:700 }
+.packages-table .col-price{ color:#000; font-weight:700; text-align:center }
+.packages-table .col:nth-last-child(-n+4){ border-bottom: none }
+
+.other-packages{ margin-top:18px; background:linear-gradient(180deg,#f9e9e5,#f2d9d3); padding:14px; border-radius:10px; border:1px solid rgba(0,0,0,0.04) }
+.other-title{ font-weight:800; color:#7b3fe0; margin-bottom:8px }
+.other-packages ul{ margin:0; padding-left:18px; color:#5b3b3b }
+
+@media (max-width:900px){
+  .packages-table{ grid-template-columns: 1fr; }
+  .doctors{ flex-direction:column }
+  .doctor{ text-align:center }
+}
+
+/* Treatments list styles (poster-like card) */
+.treatments-list-section{ padding:28px 0 }
+.treatments-list-card{ max-width:1100px; margin:0 auto; background:linear-gradient(180deg,#ff6b98,#1a1a1a); color:#fff; padding:20px; border-radius:10px; box-shadow:0 12px 40px rgba(0,0,0,0.5); border:1px solid rgba(255,255,255,0.04) }
+.treatments-list-header{ display:flex; justify-content:space-between; gap:12px; border-bottom:1px solid rgba(255,255,255,0.06); padding-bottom:10px; margin-bottom:12px }
+.treatments-list-header .title{ font-weight:800; color:#fff; font-size:1.05rem }
+.treatments-list-header .time-title{ font-weight:700; color:#ddd }
+.treatments-grid{ display:block; max-height:520px; overflow:auto; padding-right:6px }
+.t-row{ display:flex; justify-content:space-between; gap:16px; padding:8px 4px; border-bottom:1px dashed rgba(255,255,255,0.03); align-items:center }
+.t-name{ color:#f0e6d8; font-weight:600 }
+.t-time{ color:#e6d6c1; min-width:80px; text-align:right }
+.wellness-block{ margin-top:14px; padding-top:12px; border-top:1px solid rgba(255,255,255,0.04) }
+.wellness-title{ font-weight:800; color:#fff; margin-bottom:8px }
+.wellness-grid{ display:grid; grid-template-columns: repeat(2, 1fr); gap:8px }
+.w-row{ display:flex; justify-content:space-between; padding:6px 8px; background:rgba(255,255,255,0.02); border-radius:6px }
+.w-name{ color:#f7ead8 }
+.w-time{ color:#e6d6c1 }
+
+@media (max-width:900px){
+  .treatments-list-header{ flex-direction:column; align-items:flex-start }
+  .t-row{ flex-direction:column; align-items:flex-start }
+  .t-time{ text-align:left; margin-top:6px }
+  .wellness-grid{ grid-template-columns:1fr }
+}

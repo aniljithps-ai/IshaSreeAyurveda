@@ -252,7 +252,7 @@
           <li [class.active]="selectedMenu() === 'About'"><a href="#" (click)="selectMenu('About')" routerLink="/about">About</a></li>
           <li [class.active]="selectedMenu() === 'Ayurvedic Treatments'"><a (click)="selectMenu('Ayurvedic Treatments')" [routerLink]="'/treatments'">Ayurvedic Treatments</a></li>
           <li [class.active]="selectedMenu() === 'Rejuvenation'" class="has-sub"><a href="#" (click)="selectMenu('Rejuvenation')" [routerLink]="'/rejuvination'">Rejuvenation Treatments</a></li>
-          <li [class.active]="selectedMenu() === 'Packages'"><a href="#" (click)="selectMenu('Packages')">Packages</a></li>
+          <li [class.active]="selectedMenu() === 'Packages'"><a href="#" (click)="selectMenu('Packages')" routerLink="/packages">Packages & Treatments</a></li>
           <li [class.active]="selectedMenu() === 'Contact'"><a href="#" (click)="selectMenu('Contact')" [routerLink]="'/contact'">Contact</a></li>
         </ul>
       </nav>

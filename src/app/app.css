@@ -32,8 +32,10 @@
 .brand .tag{ font-size:0.85rem; color:var(--muted) }
 
 .main-nav ul{ list-style:none; display:flex; gap:22px; margin:0; padding:0 }
-.main-nav a{ color:var(--dark); text-decoration:none; font-weight:500 }
-.main-nav .active a{ color:var(--magenta) }
+.main-nav a{ color:var(--dark); text-decoration:none; font-weight:500; transition: color 180ms ease, transform 180ms ease; }
+.main-nav li:hover a{ color:var(--purple); transform:translateY(-2px) }
+.main-nav .active a{ color:var(--magenta); font-weight:700; transform:translateY(-2px) }
+.main-nav .active a::after{ content:''; display:block; height:3px; width:40%; margin:6px auto 0; background:linear-gradient(90deg,var(--magenta),var(--purple)); border-radius:2px }
 
 .cta .btn{ padding:9px 14px; border-radius:6px; text-decoration:none; font-weight:700 }
 .btn-ghost{ background:linear-gradient(90deg,var(--magenta),var(--purple)); color:white }
